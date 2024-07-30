@@ -1,0 +1,36 @@
+/* assets/style.css */
+.dropdown-with-checkboxes {
+    position: relative;
+}
+
+.dropdown-with-checkboxes .dropdown-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-with-checkboxes .dropdown-options {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.dropdown-with-checkboxes:hover .dropdown-options {
+    display: block;
+}
+
+.dropdown-with-checkboxes .checkbox-label {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown-with-checkboxes .checkbox-label input {
+    margin-right: 10px;
+}
